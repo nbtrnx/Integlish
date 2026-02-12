@@ -1,0 +1,15 @@
+:root {
+  --color-purple-dark: rgba(70, 8, 157);
+  --color-purple-light: rgba(110, 18, 245);
+  --color-white: white;
+
+  --background-default: var(--color-purple-dark);
+  --background-accent: var(--color-purple-light);
+  --text-primary: var(--color-white);
+}
+
+* {
+  background: var(--background-default);
+  color: var(--text-primary);
+  font-family: system-ui;
+}

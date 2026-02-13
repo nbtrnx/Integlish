@@ -217,8 +217,10 @@ header h1 {
 }
 
 .product-logo--header {
-  display: block;
   margin-left: -3vw;
+}
+.product-logo--header {
+  height: 75vh;
 }
 
 /* footer */
@@ -232,8 +234,8 @@ footer {
   height: 100vh;
 }
 
-.product-logo--footer {
-  width: 25vw;
+.product-logo--footer img {
+  height: 60vh;
 }
 
 .brand-logo__image--footer {

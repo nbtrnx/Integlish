@@ -75,10 +75,17 @@
   --text-9xl: 8rem; /* 128px */
 
   --font-sans: system-ui;
-  --tracking-normal: -0.06em;
+
+  --tracking-wide: -0.04em;
+  --tracking-normal: -0.05em;
+  --tracking-tight: -0.06em;
+
+  --leading-wide: 1.2;
   --leading-normal: 1;
-  --leading-tight: 0.84;
-  --leading-tighter: 0.8;
+  --leading-tight: 0.92;
+  --leading-tighter: 0.84;
+  --leading-tightest: 0.8;
+
   --font-normal: normal;
   --font-bold: bold;
 
@@ -127,22 +134,68 @@
   }
 }
 
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   background: var(--background-accent);
   color: var(--text-default);
   font-family: var(--font-sans);
-  letter-spacing: var(--tracking-normal);
-  font-weight: var(--font-normal);
-  margin: 0;
 }
 
+h2 {
+  font-style: italic;
+  font-size: var(--text-title);
+  font-weight: 900;
+  letter-spacing: var(--tracking-normal);
+  line-height: var(--leading-tight);
+}
+
+h3 {
+  font-style: italic;
+  font-size: var(--text-subtitle);
+  font-weight: 600;
+  letter-spacing: var(--tracking-tight);
+  line-height: var(--leading-normal);
+}
+
+p {
+  font-style: normal;
+  font-size: var(--text-body);
+  font-weight: 400;
+  letter-spacing: var(--tracking-wide);
+  line-height: var(--leading-wide);
+}
+
+main {
+  background: var(--background-default);
+}
+
+section,
+.faq__card {
+  padding: 4vh 4vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.hero,
+.feature-1,
+.pricing {
+  align-items: end;
+  text-align: right;
+}
+
+/* header */
 header {
   background: var(--background-accent);
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: start;
   justify-content: space-between;
-  padding: var(--space-8) var(--space-6);
+  padding: 4vh 6vw;
   height: 100vh;
 }
 
@@ -152,23 +205,42 @@ header h1 {
 
 .brand-logo {
   display: flex;
-  gap: var(--space-4);
+  gap: 4vw;
 }
 
-.brand-logo__image {
-  width: 20vw;
+.brand-logo__image--header {
+  width: 15vw;
 }
 
-.brand-logo__text {
-  width: 40vw;
+.brand-logo__text--header {
+  width: 35vw;
 }
 
-.product-logo {
+.product-logo--header {
   display: block;
-  transform: translateX(calc(var(--space-4) * -1));
-  width: 40vw;
+  margin-left: -4vw;
+  height: 75vh;
 }
 
-section {
-  background: var(--background-default);
+/* footer */
+footer {
+  background: var(--background-accent);
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: space-between;
+  padding: 4.5vh 4vw;
+  height: 100vh;
+}
+
+.product-logo--footer {
+  width: 25vw;
+}
+
+.brand-logo__image--footer {
+  width: 10vw;
+}
+
+.brand-logo__text--footer {
+  width: 25vw;
 }

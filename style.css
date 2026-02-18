@@ -550,10 +550,17 @@ footer {
   box-shadow: var(--shadow-md);
 }
 
+.feature-2__container {
+  display: flex;
+  flex-direction: column;
+  gap: inherit;
+}
+
 .feature-2__description {
   background: var(--color-black-32);
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 }
 
 .feature-2__description__header {
@@ -586,6 +593,8 @@ footer {
 }
 
 .usecase__case--text {
+  display: flex;
+  flex-direction: column;
   overflow-wrap: break-word;
 }
 
@@ -767,7 +776,7 @@ footer {
   .option,
   .feature-2__description__header--time,
   .feature-2__description__view--category {
-    padding: var(--space-6) var(--space-10);
+    padding: var(--space-8) var(--space-16);
   }
 
   .cta-button--hero {
@@ -860,17 +869,86 @@ footer {
 
   .feature-1__description--secondory--visual--icon--microphone,
   .feature-1__description--secondory--visual--ico--audio-wave {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
   }
 
   .feature-1__description--secondory--visual--icon--check {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
   }
 
   .feature-1__description--secondory--visual--button,
   .feature-2__description__view--button {
     padding: var(--space-6);
+  }
+
+  .feature-2__icon--user {
+    width: 25vw;
+    height: fit-content;
+  }
+
+  .feature-2__icon--check {
+    width: 12.5vw;
+    height: fit-content;
+  }
+
+  .feature-2__icons {
+    margin-left: 4vw;
+  }
+
+  .feature-2__container {
+    gap: var(--space-16);
+    flex-direction: row;
+    margin-top: var(--space-4);
+  }
+
+  .usecase__case {
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: var(--space-12);
+    margin-right: var(--space-12);
+  }
+
+  .illustration-container--left,
+  .illustration-container--left-pc {
+    border-radius: 0 var(--rounded-full) var(--rounded-full) 0;
+    margin: var(--space-4) 0 var(--space-2) -4vw;
+    margin-left: -8vw;
+
+    overflow: visible;
+  }
+
+  .illustration--left,
+  .illustration--left-pc {
+    border-radius: 0 var(--rounded-full) var(--rounded-full) 0;
+    border-right: var(--border-solid) var(--border-width-4) var(--color-purple-lighter);
+    border-left: none;
+
+    margin-right: 0;
+
+    flex-direction: row-reverse;
+  }
+
+  .student img {
+    transform: scaleX(-1);
+  }
+
+  .usecase__case--illustration {
+    padding: var(--space-12);
+    padding-left: 9999px;
+  }
+
+  .usecase__case--illustration img {
+    width: 27vw;
+    height: 30vh;
+  }
+
+  .usecase__case--text-container {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    gap: var(--space-4);
   }
 }

@@ -191,6 +191,3 @@ for (const option of optionsQualification) {
     }
   });
 }
-
-// make feature1 of pc ver.
-// add motions

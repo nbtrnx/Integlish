@@ -347,6 +347,7 @@ section,
   display: flex;
   flex-direction: column;
   gap: 3vh;
+  width: 100%;
 }
 
 .hero,
@@ -360,8 +361,9 @@ section,
 .feature-1__description--secondory__container {
   display: flex;
   flex-direction: column;
-  align-items: inherit;
+  align-items: end;
   gap: inherit;
+  align-self: stretch;
 }
 
 .feature-1__description--secondary,
@@ -572,6 +574,7 @@ footer {
 
 .feature-1__description--secondary {
   display: none;
+  align-self: stretch;
 }
 
 .feature-1__description--secondary.active {

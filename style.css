@@ -932,6 +932,11 @@ footer {
 
   .feature-1__container {
     gap: var(--space-12);
+    width: 100%;
+  }
+
+  .feature-1__description--secondory__container {
+    align-self: stretch;
   }
 
   .feature-1__description--primary {
@@ -943,6 +948,12 @@ footer {
   .feature-1__description--secondory__container {
     flex-direction: row;
     align-items: start;
+    flex-grow: 1;
+  }
+
+  .feature-1__description--secondary {
+    align-self: stretch;
+    flex-grow: 1;
   }
 
   .feature-1__description--secondary,
@@ -953,13 +964,16 @@ footer {
   }
 
   .feature-1__description--secondory--visual {
-    flex-direction: row;
     gap: var(--space-8);
+    align-items: center;
+  }
+
+  #listen {
+    align-self: flex-start;
   }
 
   .feature-1__description--secondory--visual--secondary {
     flex-direction: column;
-    align-items: start;
   }
 
   .feature-1__description--secondory--visual--text--primary {
@@ -998,6 +1012,14 @@ footer {
   .feature-1__description--secondory--visual--button,
   .feature-2__description__view--button {
     padding: var(--space-6);
+  }
+
+  .read--button {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-8);
+    padding: var(--space-4) var(--space-12);
   }
 
   .feature-2__icon--user {
